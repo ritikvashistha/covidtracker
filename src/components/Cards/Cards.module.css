@@ -1,0 +1,53 @@
+.container {
+  margin: 50px 0;
+}
+.containers {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1.5s ease;
+  background-color: #000000;
+}
+
+.containers:hover .overlay {
+  opacity: 0.6;
+}
+
+.text {
+  color: white;
+  font-size: 25px !important;
+  position: absolute;
+  top: 15%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card {
+  margin: 0 2% !important;
+}
+
+.infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+.recovered {
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+.deaths {
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 770px) {
+  .card {
+    margin: 2% 0 !important;
+  }
+}
